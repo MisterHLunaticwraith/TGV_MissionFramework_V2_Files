@@ -1,0 +1,3261 @@
+version=53;
+center[]={4504.6875,5,369.93924};
+class items
+{
+	items=21;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.652832,0.66282272,3.6121216};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
+		};
+		id=45;
+		type="Land_CampingTable_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.70263672,0.66282272,3.6375732};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
+		};
+		id=46;
+		type="Land_CampingTable_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={3.2265625,0.66282272,3.6469421};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
+		};
+		id=47;
+		type="Land_CampingTable_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.9824219,0.66282272,-3.8467102};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
+		};
+		id=48;
+		type="Land_CampingTable_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.62695313,0.66282272,-3.8842773};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
+		};
+		id=49;
+		type="Land_CampingTable_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.8969727,0.66282272,-3.9066162};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			createAsSimpleObject=1;
+			disableSimulation=1;
+		};
+		id=50;
+		type="Land_CampingTable_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=7;
+		};
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-7.5166016,1.335084,2.5780334};
+			angles[]={0,5.3975701,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=51;
+		type="Land_PortableLight_double_F";
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-5.8520508,0.60639143,-0.059387207};
+			angles[]={0,3.1258881,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=52;
+		type="TGV_respawn_base";
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-2.1435547,1.2342815,3.526886};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=55;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.2260742,1.2342815,3.5514832};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=56;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.19726563,1.2342815,3.6510925};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=57;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.1147461,1.2342815,3.6756897};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=58;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item12
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.7358398,1.2342815,3.5617065};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=59;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item13
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={3.6533203,1.2342815,3.5863037};
+			angles[]={-0,6.2502103,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=60;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item14
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={3.4726563,1.2342815,-3.7589417};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=61;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item15
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.5551758,1.2342815,-3.788269};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=62;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item16
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.1323242,1.2342815,-3.8952026};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=63;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item17
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.21533203,1.2342815,-3.9244995};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=64;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item18
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-1.40625,1.2342815,-3.8188782};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=65;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item19
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-2.3237305,1.2342815,-3.848175};
+			angles[]={-0,3.1034749,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+		};
+		id=66;
+		type="Land_Laptop_03_black_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+	class Item20
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.4008789,1.9471321,-0.29660034};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+			disableSimulation=1;
+		};
+		id=44;
+		type="Land_Barracks_02_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="mrh_hackAndCollectDataHackDuration";
+				expression="_this setVariable ['MRH_objectHackDuration',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="mrh_hackAndCollectPicsHack";
+				expression="_this setVariable ['MRH_objectHackPicturesReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_poweredByMilsimtools"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="mrh_search_CodeFound";
+				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="true";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="DoorStates";
+				expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"ARRAY"
+							};
+						};
+						class value
+						{
+							items=3;
+							class Item0
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=5;
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="mrh_search_nameFound";
+				expression="_this setVariable ['MRH_object_Found',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="mrh_hackAndCollectDataHackFileSize";
+				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="10";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="mrh_hackAndCollectDataHackData";
+				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="[""MRH_SdTabTestDataEntry"",""MRH_WP_M4""]";
+					};
+				};
+			};
+			nAttributes=8;
+		};
+	};
+};
