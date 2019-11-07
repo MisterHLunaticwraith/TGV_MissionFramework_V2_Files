@@ -19,3 +19,4 @@ call TGV_fnc_getFactions
 call TGV_fnc_stopSafeStart
 call TGV_fnc_startSafeStart
 call TGV_fnc_EndCredits;
+call TGV_fnc_startGenericEndCutscene;

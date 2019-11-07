@@ -1,0 +1,68 @@
+//-- Ne pas éditer ni modifier
+//Inclusion des macros (voir fichier pour guide)
+#include "TGV_macros_def.hpp"
+//----Fin de la non édition
+
+class cfgTGVmissions
+{
+
+	//Ne pas changer
+	class FrameWorkVersion
+	{
+		versionStr = "2.0.0";
+		versionAr[] = {2,0,0};
+	};
+	// fin ne pas changer
+	class missionInfo
+	{
+		authors[] = {"Mr H."}; //changer avec votre pseudo
+		missionPicture = ""; //image "poster" de la mission (celle que vous utilisez dans les attributs pour le chargement)
+		authorsLogos[]={MEMBERLOGO(MRH)}; // sont disponibles: ANT (anto), BLKH (BlackHawk) KMI,FRED,KWOIN, LDJ (Ledjean) MANU,NIAK,RAVEN,SAJ(sajkhearn),RED1 (Redbelette),TILK
+		date[] = {02,11,19}; // date de la dernière maj jj,mm,aa
+		versionStr = "0.0.1"; // changer au fur et à mesure des majs
+	};
+
+};
+
+//déclaration des fonctions
+class CfgFunctions
+{
+	class TGV_mission
+	{
+		class TGV_fonctions_de_mission
+		{
+			tag = "TGV";
+			file = "MissionFunctions";
+
+			#include "MissionFunctions\cfgFunctions.hpp"
+		};
+		
+	};
+};
+
+//déclaration des sons
+class CfgSounds
+{
+	#include "Media\cfgSounds.hpp"
+};
+//déclaration de la musique
+class CfgMusic
+{
+	#include "Media\cfgMusic.hpp"
+};
+//déclaration des fins possibles
+class CfgDebriefing
+{
+	#include "cfgDebriefing.hpp"
+};
+//Images de la tablette
+class MRH_SoldierTabIntelPictures
+{
+	#include "cfgMRH_SoldierTabIntelPictures.hpp"
+};
+// Données de la tablette
+class MRH_SoldierTabData
+{
+	#include "cfgMRH_SoldierTabData.hpp"
+};
+//------------------------------------
