@@ -154,6 +154,13 @@ Vous pouvez écrire le texte de chaque sous rubrique entre les guillemets (SANS 
  <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_2.jpg" width="480">
 </p>
+#### Avoir des briefings personnalisés par faction :
+Vous voulez utiliser plusieurs factions (RHS Marines, RHS SOCCOM ET RHS ARMY par exemple) avec un briefing personnalisé pour chaque faction? C'est possible! 
+1. Créez votre mission (la faction d'origine de chaque unité jouable placée aura son importance dans ce cas là, ne faites pas n'importe quoi!)et lancez la mission avec les unités jouables occupées par des IA puis éxécutez dans la console ```call TGV_fnc_getFactions``` un hint apparaîtra, copiez le résultat obtenu dans le presse papier ça donnera quelque chose qui ressemble à ça:
+>BR_BLU_F.sqf BR_BLU_CTRG_F.sqf BR_BLU_G_F.sqf BR_BLU_GEN_F.sqf
+Ce qui correspond aux différents nom de chaque fichier de briefing qui doit être présent à la racine de la mission.
+2. Créez donc chacun de ces fichiers ***A LA RACINE DE LA MISSION*** sous peine de bug (voir crash arma si vous utilisez le template ci-dessous).
+3. Remplissez les! un template est présent dans ce repository *BR_BLU_F.sqf* attention: il est légèrement diférent du fichier *briefingSMEPP.sqf* car il inclu les macros (voir plus loin).
 
 ## Fonctions utiles :
 call TGV_fnc_introCredits
