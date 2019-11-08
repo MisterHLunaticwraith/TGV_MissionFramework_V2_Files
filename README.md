@@ -7,7 +7,7 @@
     Retrouvez nous :<a href="https://twitter.com/TGVArma3Milsim">Twitter</a> | <a href="http://tgv.ovh/">Web</a> | <a href="https://discord.gg/BRNyUSk">Discord</a> | <a href="https://github.com/MisterHLunaticwraith/TGV_Assets">Git hub de TGV Assets</a></strong></sup>
 </p>
 
-#### Framework de mission TGV v2.0.0
+# Framework de mission TGV v2.0.0
 * par : **[TGV] Mr H.**
 
 ## Ce framework requiert l'addon TGV_Assets
@@ -43,6 +43,9 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/reglagesAddon_2.jpg" width="480">
 </p>
 
+##### Explication des réglages:
+###### Activer le safe start en début de mission :
+> Ce réglage est activé par défaut
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
