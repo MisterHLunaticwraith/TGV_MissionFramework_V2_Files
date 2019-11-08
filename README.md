@@ -103,11 +103,12 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 
 #### Placer un respawn bunker et les objets de respawn 
 * si vous avez suivit les étapes au début de ce guide vous avez dans vos compositions personnalisées (F2 puis <a href="https://community.bistudio.com/wiki/Eden_Editor:_Custom_Composition">îcone circulaire dans l'éditeur</a>) une composition appelée TGV_RespawnBunker_v2
-# Ce respawn bunker est un bâtiment fermé à clef avec une tombe et des ordinateurs, les ordinateurs sont pré-configurés pour accéder au mode spectateur via une action ace
+##### Ce respawn bunker est un bâtiment fermé à clef avec une tombe et des ordinateurs, les ordinateurs sont pré-configurés pour accéder au mode spectateur via une action ace
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/respawn_1.jpg" width="480">
 </p>
-# la tombe est importante: c'est un objet d'une classe particulière qui se déclare à l'initialisation de la mission comme point de respawn par défaut, cela permet de faire respawner les joueurs à l'intérieur d'un bâtiment, ce qui n'est pas possible avec le respawn sur marqueur d'Arma de base. Un seul objet de ce type doit être placé dans la mission. AU respan le joueur fait face à la tombe et contemple sa fragile mortalité ;-)
+
+##### la tombe est importante: c'est un objet d'une classe particulière qui se déclare à l'initialisation de la mission comme point de respawn par défaut, cela permet de faire respawner les joueurs à l'intérieur d'un bâtiment, ce qui n'est pas possible avec le respawn sur marqueur d'Arma de base. Un seul objet de ce type doit être placé dans la mission. AU respan le joueur fait face à la tombe et contemple sa fragile mortalité ;-)
 *Dans le cadre d'une mission avec des points de respawn particuliers au camp il faut remplacer la tombe par l'objet TGV de respawn qui correspond au camp désiré(un seul objet par type).
 
 <p align="center">
