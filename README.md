@@ -125,7 +125,7 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_1.jpg" width="480">
 </p>
 
-*Note dans l'éditeur et en preview depuis l'éditeur il prend le nom du dossier comme nom de mission, mais une fois exporté il prendra bien le nom que vous avez défini dans les attributs de mission dans l'éditeur.*
+*Note: dans l'éditeur et en preview depuis l'éditeur, il prend le nom du dossier comme nom de mission, mais une fois exporté il prendra bien le nom que vous avez défini dans les attributs de mission dans l'éditeur.*
 
 2. les informations ACRE2
 *Ce petit tuto et ses images sont stockés dans l'addon et ajoutés automatiquement*
@@ -139,6 +139,21 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 </p>
 
 *Le menu admin n'est visible que par un admin loggué sur le serveur contrairement à précédement une fois en jeu il n'est pas nécessaire de retourner au lobby pour le voir si vous n'étiez pas admin au départ de la mission. Logguez vous admin, ouvrez la carte et pouf il sera là à vous attendre sagement.*
+
+#### Le template de briefing SMEPP
+###### A la racine de la mission vous trouverez un briefingSMEPP.sqf, ce fichier ne DOIT PAS ETRE RENOMME OU SUPPRIME mais il peut être édité. Il ressemble à ça:
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_5.jpg" width="480">
+</p> 
+
+Vous pouvez écrire le texte de chaque sous rubrique entre les guillemets (SANS LES SUPPRIMER), ce texte accepte les balises de briefing arma, le fichier contient un rappel de ces balises. Faites donc un beau briefing en respectant le plan habituel Situation Mission Execution Personnels Points Particuliers.
+
+*L'addon retraitera votre texte et créera automatiquement les sous parties du briefing en leur ajoutant au passage une image titre bien stylée, pour la partie situation par exemple ça donne ça:*
+ 
+ <p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_2.jpg" width="480">
+</p>
 
 ## Fonctions utiles :
 call TGV_fnc_introCredits
