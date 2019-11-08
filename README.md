@@ -76,6 +76,30 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/attributs_3.jpg" width="480">
 </p>
+
+###### */!\ Attention: Aucun des réglages de respawn n'est appliqué qu'en mode multijoueur dans la preview de mission de l'éditeur, si jous testez en singleplayer vous serez respawné dèes le début de la mission*
+
+#### Les réglages du respawn 
+
+* Ces réglages sont disponibles avec les autres réglages du mode
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/reglagesAddon_2.jpg" width="480">
+</p>
+
+##### Explication des réglages
+##### *Dans le cadre d'une mission milsim PVE habituelle, il n'est pas nécessaire de changer ces réglages par défaut*
+
+###### Respawn sur position de départ
+>Désactivé par défaut. Si ce réglage est activé au respawn, les joueurs sont renvoyés à la position de leur unité au lancement de la mission.
+###### Respawn sur point respawn TGV. 
+>Réglage par défaut, les joueurs respawnent sur une tombe objet TGV (préplacée dans le respawn bunker voir plus loin pour plus d'explications).
+###### Respawn avec le paquetage de départ
+>Désactivé par défaut. Par défaut un joueur respawne avec son équipement tel qu'il était au moment de sa mort, si ce réglage est activé le joueur respawnera avec son équipement de début de mission. 
+###### Respans différents par camps
+> Désactivé par défaut. Si activé les joueurs respawnent sur l'objet de respawn TGV correspondant à leur camp, utilisé seulement dans le cas d'une mission PVP avec respawn autorisé.
+###### Ouvrir le mode spectateur au respawn
+> Activé par défaut. Au respawn le joueur est passé automatiquement en mode spectateur (mais peut quitter en appuyant sur ECHAP)
+
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
