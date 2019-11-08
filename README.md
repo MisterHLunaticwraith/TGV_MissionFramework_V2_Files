@@ -162,6 +162,22 @@ Vous voulez utiliser plusieurs factions (RHS Marines, RHS SOCCOM ET RHS ARMY par
 Ce qui correspond aux différents nom de chaque fichier de briefing qui doit être présent à la racine de la mission.
 2. Créez donc chacun de ces fichiers ***A LA RACINE DE LA MISSION*** sous peine de bug (voir crash arma si vous utilisez le template ci-dessous).
 3. Remplissez les! un template est présent dans ce repository *BR_BLU_F.sqf* attention: il est légèrement diférent du fichier *briefingSMEPP.sqf* car il inclu les macros (voir plus loin).
+4. Dans les réglages de l'addon cochez la case *Utiliser un briefing par faction*
+
+## Le notepad
+* Sur l'écran de briefing avant le départ de la mission vous remarquerez en haut à droite un petit bouton "Bloc note" cliquer dessus révèle un bloc note (recliquer le cache). On peut y taper du texte, y prendre des notes quoi.
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/notepad.jpg" width="480">
+</p> 
+
+***Ce bloc note est accessible et toujours modifiable en mission via le menu ACE, les notes qui y sont prises sont sauvegardées et persistantes tant que l'utilisateur n'a pas quitté arma, utile si on fait un faut départ!***
+## Le safe start
+
+## La structure du framework
+
+## Les macros
+
+## Déclarer des fonctions
 
 ## Fonctions utiles :
 call TGV_fnc_introCredits
