@@ -56,12 +56,26 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 > Activé par défaut. Enclenche la sécurité des armes des joueurs au début de la mission, c'est mieux pour le Role Play, et la sécurité.
 ###### Auto equiper les bouchons d'oreille
 > Activé par défaut. Les bouchons d'oreille sont puis equipés au départ de la mission. (sinon il y en a toujours un pour oublier)
-##### Utiliser un briefing par faction
+###### Utiliser un briefing par faction
 > Désactivé par défaut. Si activé, les joueurs auront un briefing par différent selon la faction (et PAS LE CAMP) de leur unité jouable. Utile si vous voulez avoir des briefings différents selon les groupes, nécessite la création de nouveaux fichiers, voir explications détaillées plus loin.
-##### Note par défaut du notepad
+###### Note par défaut du notepad
 >Texte libre. Ce texte sera celui noté au départ de la mission dans le notepad, peut être n'importe quoi! Voir plus loin pour les explications sur le notepad
 
 ## Configurer le respawn de votre mission & le respawn bunker
+###### */!\ Attention: Aucun des réglages de respawn n'est appliqué si le mode de respawn choisit n'est pas "Respawn TGV"*
+#### Choisir le respawn TGV
+1. Aller dans les attributs de mission, cliquer sur multijoueur
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/attributs_1.jpg" width="480">
+</p>
+2. Choisir respawn sur position personnaliée dans le menu déroulant.
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/attributs_2.jpg" width="480">
+</p>
+3. Cocher respawn TGV dans la liste en dessous (mettre aussi un délais de 10 secondes,c'est plus classe)
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/attributs_3.jpg" width="480">
+</p>
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
