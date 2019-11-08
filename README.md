@@ -109,11 +109,35 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 </p>
 
 ##### la tombe est importante: c'est un objet d'une classe particulière qui se déclare à l'initialisation de la mission comme point de respawn par défaut, cela permet de faire respawner les joueurs à l'intérieur d'un bâtiment, ce qui n'est pas possible avec le respawn sur marqueur d'Arma de base. Un seul objet de ce type doit être placé dans la mission. AU respan le joueur fait face à la tombe et contemple sa fragile mortalité ;-)
-*Dans le cadre d'une mission avec des points de respawn particuliers au camp il faut remplacer la tombe par l'objet TGV de respawn qui correspond au camp désiré(un seul objet par type).
+*Dans le cadre d'une mission avec des points de respawn particuliers au camp il faut remplacer la tombe par l'objet TGV de respawn qui correspond au camp désiré(un seul objet par type).*
 
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/respawn_2.jpg" width="480">
 </p>
+
+## Le briefing en version 2.0 Open space jeune branché parisien.
+
+#### Les parties automatisées:
+* L'addon ajoute automatiquement des parties automatisées au briefing
+1. Les infos de mission et auteur.
+*L'addon va lire les informations du description.ext de votre mission et les ajouter tout seul au briefing*
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_1.jpg" width="480">
+</p>
+*Note dans l'éditeur et en preview depuis l'éditeur il prend le nom du dossier comme nom de mission, mais une fois exporté il prendra bien le nom que vous avez défini dans les attributs de mission dans l'éditeur.*
+
+2. les informations ACRE2
+*Ce petit tuto et ses images sont stockés dans l'addon et ajoutés automatiquement*
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_3.jpg" width="480">
+</p>
+
+3. Le menu admin
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_4.jpg" width="480">
+</p>
+*Le menu admin n'est visible que par un admin loggué sur le serveur contrairement à précédement une fois en jeu il n'est pas nécessaire de retourner au lobby pour le voir si vous n'étiez pas admin au départ de la mission. Logguez vous admin, ouvrez la carte et pouf il sera là à vous attendre sagement.
+
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
