@@ -45,7 +45,23 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 
 ##### Explication des réglages:
 ###### Activer le safe start en début de mission :
-> Ce réglage est activé par défaut
+> Ce réglage est activé par défaut, le Safe Start est lancé automatiquement au début de la mission. Voir plus loin pour les explications sur le safe start.
+###### Montrer les tags des joueurs pendant le safe start
+> Activé par défaut. Pendant le safe start les tags des joueurs seront montrés, il ne s'agit pas des tags ACE3 mais de tags customs, plus gros et bien visibles. Voir la description de la fonction pour plus d'informations.
+###### Jouer la vidéo TGV au départ de la mission
+> Activé par défaut,la vidéo TGV sera jouée au lancement de la mission. Utile de le désactiver quand on édite pour ne pas se la retaper 3000 fois mais pensez à la réactiver avant d'exporter, c'est toujours important de se faire de l'autopromotion et puis les autres n'ont pas ça chez eux, autant marquer notre différence...
+###### Utiliser la version non skippable de la vidéo
+> Désactivé par défaut, si activé on ne peut pas passer la vidéo en début de misison. Pour de la pub vraiment aggressive! ;-)
+###### Enclencher la sécurité des armes par défaut
+> Activé par défaut. Enclenche la sécurité des armes des joueurs au début de la mission, c'est mieux pour le Role Play, et la sécurité.
+###### Auto equiper les bouchons d'oreille
+> Activé par défaut. Les bouchons d'oreille sont puis equipés au départ de la mission. (sinon il y en a toujours un pour oublier)
+##### Utiliser un briefing par faction
+> Désactivé par défaut. Si activé, les joueurs auront un briefing par différent selon la faction (et PAS LE CAMP) de leur unité jouable. Utile si vous voulez avoir des briefings différents selon les groupes, nécessite la création de nouveaux fichiers, voir explications détaillées plus loin.
+##### Note par défaut du notepad
+>Texte libre. Ce texte sera celui noté au départ de la mission dans le notepad, peut être n'importe quoi! Voir plus loin pour les explications sur le notepad
+
+## Configurer le respawn de votre mission & le respawn bunker
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
