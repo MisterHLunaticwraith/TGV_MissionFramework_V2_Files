@@ -124,6 +124,7 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_1.jpg" width="480">
 </p>
+
 *Note dans l'éditeur et en preview depuis l'éditeur il prend le nom du dossier comme nom de mission, mais une fois exporté il prendra bien le nom que vous avez défini dans les attributs de mission dans l'éditeur.*
 
 2. les informations ACRE2
@@ -136,7 +137,8 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/briefing_4.jpg" width="480">
 </p>
-*Le menu admin n'est visible que par un admin loggué sur le serveur contrairement à précédement une fois en jeu il n'est pas nécessaire de retourner au lobby pour le voir si vous n'étiez pas admin au départ de la mission. Logguez vous admin, ouvrez la carte et pouf il sera là à vous attendre sagement.
+
+*Le menu admin n'est visible que par un admin loggué sur le serveur contrairement à précédement une fois en jeu il n'est pas nécessaire de retourner au lobby pour le voir si vous n'étiez pas admin au départ de la mission. Logguez vous admin, ouvrez la carte et pouf il sera là à vous attendre sagement.*
 
 ## Fonctions utiles :
 call TGV_fnc_introCredits
