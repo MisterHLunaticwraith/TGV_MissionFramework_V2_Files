@@ -179,7 +179,11 @@ Par défaut, en début de mission le Safe Start se lance, durant le safe start l
 </p>
 
 ## La structure du framework
-
+* Le framework contient tous les fichiers nécessaires à l'appel de scripts dans une mission ainsi que des templates pour la déclaration des sons, des musiques,des fins possibles et des données pour  la tablette de milsim tools on y trouve de plus un répertoire et des exemples pour réaliser des cutscene et préenregistrer des chemins pour le BIS_fnc_unitPlay. Chaque fichier contient des explications sur son utilisation ainsi que l'appel des macros et eventuellement des templates. les cfg les plus communéments utilisés dans les mission sont déjà présents. Dans un souci de lisibilité les différentes parties du *description.ext* sont séparées dans différents fichiers, placés dans les répertoires appropriés et inclu par *#include* dans le *description.ext* par exemple le *cfgSounds.hpp* et le *cfgMusic.hpp* sont placés dans le répertoire média et le *cfgFunctions* dans le répertoire MissionFunctions.
+**/!\ Un #include qui pointe vers un fichier n'existant pas entraine un crash d'arma, déplacer, supprimer ou modifier ces noms de fichier n'est pas nécessaire et se fera à fos risques et périls...** 
+* Le dossier MissionSCripts est vide et destiné à acceuillir vos sqf appelés par un *execVM* même si cette méthode est déconseillée pour des raisons d'optimisations.
+* Le dossier cutScenes est destiné à accueillir des sqf de cutScenes, il contient un template qui illustre l'utilisation de la fonction *TGV_fnc_aliasCutScene* dans l'absolu il serait préférable de déclarer vos fichiers de cutscene dans des fonctions (voir plus bas) mais les execVM sont moins laborieux à utiliser lorsque l'on crée et teste ses cutscenes. Ce répertoire contient aussi un fichier recordedPaths, destiné à acceuillir les "chemins" créés avec <a href="https://community.bistudio.com/wiki/BIS_fnc_UnitCapture">BIS_fnc_UnitCapture</a> il est précompilé à l'init et ne doit pas être supprimé même si vous n'en faites pas usage.
+* Pour l'usage du répertoire MissionFunctions voir plus bas dans la section "déclarer des fonctions".
 ## Les macros
 
 ## Déclarer des fonctions
@@ -191,3 +195,4 @@ call TGV_fnc_stopSafeStart
 call TGV_fnc_startSafeStart
 call TGV_fnc_EndCredits;
 call TGV_fnc_startGenericEndCutscene;
+[]spawn TGV_fnc_aliasCutScene
