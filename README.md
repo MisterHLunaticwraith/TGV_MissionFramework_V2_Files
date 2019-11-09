@@ -173,6 +173,11 @@ Ce qui correspond aux différents nom de chaque fichier de briefing qui doit êt
 ***Ce bloc note est accessible et toujours modifiable en mission via le menu ACE, les notes qui y sont prises sont sauvegardées et persistantes tant que l'utilisateur n'a pas quitté arma, utile si on fait un faut départ!***
 ## Le safe start
 
+Par défaut, en début de mission le Safe Start se lance, durant le safe start les tags des joueurs (nom et logo de squad) sont bien visibles au dessus de leurs têtes, un gros message bien voyant est affiché informant que le safe start est actif et un logo armes désactivées apparaît en bas à gauche de l'écran. Pendant le safe start tous les projectiles (balles ET grenades) sont supprimés et ne font aucun dégats. C'est aussi valable pour les IA ce qui est bien pratique pour débugguer vos missions sans se faire blesser par l'ennemi. Au départ de la mission l'admin peut mettre fin au safe start via le menu admin mais vous pouvez aussi y mettre fin en appelant la fonction ```call TGV_fnc_stopSafeStart``` au moment opportun. La fonction a des effets globaux et peut être appelée sur une seule machine, inutile de la remote executer.
+ <p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/safeStart.jpg" width="480">
+</p>
+
 ## La structure du framework
 
 ## Les macros
