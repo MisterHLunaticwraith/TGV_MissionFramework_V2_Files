@@ -230,16 +230,51 @@ A n'utiliser que pour les fonctions d'importance critique.
   a) Remplacer le sleep par  <a href="hhttps://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitAndExecute-sqf.html">CBA_fnc_waitAndExecute</a>
   > Permet un sleep EXACT peut importe les ralentissements et les chutes de framerate et qui s'executera obligatoirement.
 
-  ``` [
+``` 
+ [
     {
         code
     }, 
     [params], 
     delay
-] call CBA_fnc_waitAndExecute; ```
+] call CBA_fnc_waitAndExecute; 
+```
 
   b) Remplacer le waitUntil par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html"> de leur liste de fonctions ici</a>
+  > Pemet un waitUntil EXACT et qui ne se perdra pas dans le scheduleur, à utiliser absolument si le délais du waitUntil risque d'être long 
+  
+```
+[
+    {cond}, 
+    {code}, 
+    [params]
+] call CBA_fnc_waitUntilAndExecute;
+```
   c) DANS CERTAINS CAS remplacer les while{}do{} par  <a href="https://github.com/MisterHLunaticwraith/MRHMilsimTools/blob/master/Addons/MRHMilsimTools/Functions/CoreFunctions/fn_MilsimTools_Core_conditionalPFEH.sqf">MRH_fnc_MilsimTools_Core_conditionalPFEH</a>
+  > Fonction faite maison qui peut remplacer avantageusement l'event handler onEachFrame de Arma ou une loop de while, comme pour les deux exemples précédents une execution exacte est garantie.
+```
+Function name:MRH_fnc_MilsimTools_Core_conditionalPFEH
+Author: Mr H.
+Description: Will run a CBA PFEH only for as long as the condition is fulfilled, will run provided code upon exiting and remove PFEH, used to replace while loops in unscheduled environment
+Return value: cba PFEH handle
+Public: No
+Parameters:
+0- <CODE> code to Run stated between {}
+1 - <ANY> OPTIONAL parameters, will be passed to  code to run, exit code and condition
+2- <CODE> OPTIONAL exit code between {} code that will be executed upon ending PFEH default is {}
+3- <CODE THAT RETURNS BOOLEAN> - OPTIONAL conditions during which PFEH will run default {true}
+4- <NUMBER> -OPTIONAL delay between each execution
+Example(s):
+_handle = [
+	{hint str (_this select 0)},
+	[player],
+	{hint format ["Player %1 has died",(_this select 0)]},
+	{alive player},
+	2
+]call MRH_fnc_MilsimTools_Core_conditionalPFEH;
+//will hint player object every 2 seconds until player dies upon which it will hint that it has died
+```
+2. ###### Gestion de la localité d'execution d'un code avec les événements CBA
 
 ## Fonctions utiles :
 call TGV_fnc_introCredits
