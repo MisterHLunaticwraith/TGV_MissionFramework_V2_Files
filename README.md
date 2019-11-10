@@ -236,7 +236,7 @@ A n'utiliser que pour les fonctions d'importance critique.
     }, 
     [params], 
     delay
-] call CBA_fnc_waitAndExecute;```
+] call CBA_fnc_waitAndExecute; ```
 
   b) Remplacer le waitUntil par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html"> de leur liste de fonctions ici</a>
   c) DANS CERTAINS CAS remplacer les while{}do{} par  <a href="https://github.com/MisterHLunaticwraith/MRHMilsimTools/blob/master/Addons/MRHMilsimTools/Functions/CoreFunctions/fn_MilsimTools_Core_conditionalPFEH.sqf">MRH_fnc_MilsimTools_Core_conditionalPFEH</a>
