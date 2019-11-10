@@ -277,7 +277,8 @@ _handle = [
 2. ###### Gestion de la localité d'execution d'un code avec les événements CBA
 > Les <a href="https://github.com/CBATeam/CBA_A3/wiki/Custom-Events-System"> Evénements CBA</a> ont pour fonction première de permettre de créer des Event Handlers customs semblables <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers"> ceux d'arma</a> savoir s'en servir et connaître ceux qui sont déclenchés par <a href="https://ace3mod.com/wiki/framework/events-framework.html">ACE</a> et 
  <a href="https://mrhmilsimtools-arma3-mod.fandom.com/wiki/List_of_listenable_event_handlers">Milsim Tools</a> vous permettra de diversifier vos missions scriptées. Mais ils offrent de plus une telle optimisation de l'execution distante en multijoueur que des mods comme ACE n'utilisent que celà en lieu et place du RemoteExec, c'est (nettement) mieux optimisé, à peine plus difficile à mettre en place et parfois la seule solution qui fonctionne pour des commandes d'arma qui sont bugguées (c'est par exemple le SEUL moyen de faire un remote exec sur les commandes de la catégorie *moveIn* d'Arma, aucune des méthodes natives d'arma ne fonctionne correctement en multi avec cette commande).
- Voici la mise en place:
+ 
+ ###### Voici la mise en place:
   a) Créer un événement dans un des 3 inits: en général le *init.sqf*, si vous êtes certains que le code ne sera jamais utilisé par le serveur vous pouvez le mettre dans le *initPlayerLocal.sqf*, si au contraire vous êtes certains que le code ne doit absolument être executée sur le serveur vous pouvez le mettre dans le *initServer.sqf* (ça n'a pas une importance phénoménale pour ce dernier on pourra reciblex l'éxecution après). Un event se déclare de la manière suivante:
   ```
 	["tag_nom_de_mon_event",{code de mon event, peut recevoir des paramètres}] call CBA_fnc_addEventHandler;
@@ -297,6 +298,54 @@ _handle = [
   ```
 	["tag_nom_de_mon_event",[parametres à passer],objetAJoindre] call CBA_fnc_serverEvent
   ```
+  ###### Avec un exemple concret:
+  
+  a) J'ai une fonction "dire bonjour" qui ressemble à ça:
+  
+  ```
+  // TGV_mission_fnc_direBonjour
+  params ["_quiDitBonjour"];
+  hint format ["%1 te dit bonjour!"];
+  ```
+  
+  b) Je vais créer mon event dans le *init.sqf*
+  
+  ```
+  //init.sqf
+  ["TGV_dire_bonjour_event",{_this call TGV_mission_fnc_direBonjour}] call CBA_fnc_addEventHandler;
+  ```
+  
+  c) Plus tard dans un script je veux:
+    - dire bonjour au serveur: (il s'en fout mais bon c'est pour l'exemple)
+  
+  ```
+	["TGV_dire_bonjour_event",name player] call CBA_fnc_serverEvent;
+  ```
+  effet: rien sur un dédié (mais le code y est executé, c'est juste que hint sur un dédié ne veut rien dire vu qu'il n'a pas d'interface), en hosted le host verra un hint "Mr H. te dit bonjour!"
+  
+	-Dire bonjour à tout le monde 
+  ```
+	["TGV_dire_bonjour_event",name player] call CBA_fnc_globalEvent;
+  ```
+  effet : tout le monde verra le hint
+  
+	-Dire bonjour à Anto (admettons que j'ai une unité jouable dont le nom de variable est anto)
+	
+  ```
+	["TGV_dire_bonjour_event",name player,anto] call CBA_fnc_targetEvent;
+  ```
+  effet: seul le joueur qui occupe le perso avec nom de variable anto verra le hint
+
+	-Dire bonjour à seulement Anto, blackhawk et Kmi, en admettant que chacun occupe une unité jouable avec un nom de variable du même nom
+  ```
+  private _coolGuys = [anto,kmi,blackhawk];
+  {
+	["TGV_dire_bonjour_event",name player,_x] call CBA_fnc_targetEvent;
+  }forEach _coolGuys;
+  ```
+  
+  effet : seul eux verront le hint
+  
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
