@@ -55,9 +55,9 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 ###### Enclencher la sécurité des armes par défaut
 > Activé par défaut. Enclenche la sécurité des armes des joueurs au début de la mission, c'est mieux pour le Role Play, et la sécurité.
 ###### Auto equiper les bouchons d'oreille
-> Activé par défaut. Les bouchons d'oreille sont puis equipés au départ de la mission. (sinon il y en a toujours un pour oublier)
+> Activé par défaut. Les bouchons d'oreille sont equipés au départ de la mission. (sinon il y en a toujours un pour oublier)
 ###### Utiliser un briefing par faction
-> Désactivé par défaut. Si activé, les joueurs auront un briefing par différent selon la faction (et PAS LE CAMP) de leur unité jouable. Utile si vous voulez avoir des briefings différents selon les groupes, nécessite la création de nouveaux fichiers, voir explications détaillées plus loin.
+> Désactivé par défaut. Si activé, les joueurs auront un briefing différent selon la faction (et PAS LE CAMP) de leur unité jouable. Utile si vous voulez avoir des briefings différents selon les groupes, nécessite la création de nouveaux fichiers, voir explications détaillées plus loin.
 ###### Note par défaut du notepad
 >Texte libre. Ce texte sera celui noté au départ de la mission dans le notepad, peut être n'importe quoi! Voir plus loin pour les explications sur le notepad
 
@@ -77,7 +77,7 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/attributs_3.jpg" width="480">
 </p>
 
-###### */!\ Attention: Aucun des réglages de respawn n'est appliqué qu'en mode multijoueur dans la preview de mission de l'éditeur, si jous testez en singleplayer vous serez respawné dès le début de la mission*
+###### */!\ Attention: Aucun des réglages de respawn n'est appliqué en mode singlplayer dans la preview de mission de l'éditeur, si jous testez en singleplayer vous serez respawné dès le début de la mission. Testez en multiplayer!*
 
 #### Les réglages du respawn 
 
@@ -96,7 +96,7 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
 >Réglage par défaut, les joueurs respawnent sur une tombe objet TGV (préplacée dans le respawn bunker voir plus loin pour plus d'explications).
 ###### Respawn avec le paquetage de départ
 >Désactivé par défaut. Par défaut un joueur respawne avec son équipement tel qu'il était au moment de sa mort, si ce réglage est activé le joueur respawnera avec son équipement de début de mission. 
-###### Respans différents par camps
+###### Respawns différents par camps
 > Désactivé par défaut. Si activé les joueurs respawnent sur l'objet de respawn TGV correspondant à leur camp, utilisé seulement dans le cas d'une mission PVP avec respawn autorisé.
 ###### Ouvrir le mode spectateur au respawn
 > Activé par défaut. Au respawn le joueur est passé automatiquement en mode spectateur (mais peut quitter en appuyant sur ECHAP)
@@ -108,7 +108,7 @@ Typiquement "Mes documents-- Arma 3 -Other Profiles(ou juste Arma 3 si vous n'av
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/respawn_1.jpg" width="480">
 </p>
 
-##### la tombe est importante: c'est un objet d'une classe particulière qui se déclare à l'initialisation de la mission comme point de respawn par défaut, cela permet de faire respawner les joueurs à l'intérieur d'un bâtiment, ce qui n'est pas possible avec le respawn sur marqueur d'Arma de base. Un seul objet de ce type doit être placé dans la mission. AU respan le joueur fait face à la tombe et contemple sa fragile mortalité ;-)
+##### la tombe est importante: c'est un objet d'une classe particulière qui se déclare à l'initialisation de la mission comme point de respawn par défaut, cela permet de faire respawner les joueurs à l'intérieur d'un bâtiment, ce qui n'est pas possible avec le respawn sur marqueur d'Arma de base. Un seul objet de ce type doit être placé dans la mission. Au respawn le joueur fait face à la tombe et contemple sa fragile mortalité ;-)
 *Dans le cadre d'une mission avec des points de respawn particuliers au camp il faut remplacer la tombe par l'objet TGV de respawn qui correspond au camp désiré(un seul objet par type).*
 
 <p align="center">
@@ -188,6 +188,7 @@ Par défaut, en début de mission le Safe Start se lance, durant le safe start l
 
 * Le compileur d'Arma permet l'utilisation de <a href="https://community.bistudio.com/wiki/PreProcessor_Commands">macros </a>. Une *macro* est en réalité un moyen de définir un "raccourci" pour du code ou des chemins de fichiers. Par exemple une macro définie ainsi ```#define MRH_BEST hint "Mr H. is the best"``` pourra être utilisée plus loin dans du code ainsi: ```MRH_BEST;``` et aura le même effet que de taper ```hint "Mr H. is the best"``` ou (plus intéressant) ```FUNC(mrhIsTheBest);``` est dans le framework equivalent à taper: ```call TGV_mission_fnc_mrhIsTheBest``` c'est aussi utile pour raccourcir un chemin vers un fichier exemple: ```APIC(kilroygraf.paa)``` est égual à ```"\TGV_Assets\paa\kilroygraf.paa"``` . Les différentes macros sont définies dans le fichier *TGV_macros_def.hpp* qui se trouve à la racine de votre mission avec framework.
 * Pour que ces macros soient disponibles elles doivent être définie dans votre fichier. Tout fichier qui contient *#include TGV_macros_def.hpp"* ou *#include "macros_path.hpp"* est déjà configuré pour les utiliser.
+* Les macros pré définies sont décrites et expliquées dans le fichier, avec à chaque fois un exemple d'utilisation.
 
 ## Déclarer des fonctions
 * **Un peu de théorie:** Si vous êtes arrivé jusqu'ici vous connaissez probablement déjà la manière habituelle d'appeler des scripts, la commande: *execVM* c'est la plus courante et la plus utilisée tout le monde la connaît, tout le monde l'utilise, problème: c'est aussi la plus caca! Pourquoi ? Parce que du code appelé avec cette commande est recompilé à chaque appel, alors que du code bien déclaré n'est compilé qu'une fois à l'initialisation de la mission. Il n'y a que deux situations dans lesquelles il est parfaitement légitime d'utiliser *execVM* :
@@ -215,9 +216,26 @@ Quelques règles :
 
 * Les fonctions préfixées *TGV_fnc_* sont celles placées dans l'addon. (je sais j'aurais du faire l'inverse mais bon c'est comme ça).
 
-* Partout ou les macros sont disponibles vous pouvez faire à la place de ```call TGV_mission_fnc_nomDeFonction;``` ==> ```FUNC(nomDeFonction);``` et à la place de ```[]spawn TGV_mission_fnc_nomDeFonction;``` ==> ```[]spawn SFUNC(nomDeFonction);``` . Il y a d'autres raccourcis du genre, voir dans le fichier des macros.
+* Partout ou les macros sont disponibles vous pouvez faire à la place de ```call TGV_mission_fnc_nomDeFonction;``` ==> ```FUNC(nomDeFonction);``` et à la place de ```[]spawn TGV_mission_fnc_nomDeFonction;``` ==> ```[] SFUNC(nomDeFonction);``` . Il y a d'autres raccourcis du genre, voir dans le fichier des macros.
 
 ## Du bon usage de CBA
+
+* Tout le monde utilise CBA mais peu de gens savent à quoi il sert vraiment. Pour vous la faire courte c'est en soit un framework ultra impressionant par la qualité de son code qui facilite grandement la vie avec Arma. Impossible de vous faire un tour complet de CBA, pour info sachez qu'ils ont <a href="https://github.com/CBATeam/CBA_A3/wiki">un wiki ici</a> et un export complet <a href="http://cbateam.github.io/CBA_A3/docs/files/overview-txt.html"> de leur liste de fonctions ici</a>.
+
+#### Je vais quand même prendre le temps de vous faire le tour de quelques fonctionnalités utiles pour ooptimiser votre code avec CBA
+1. ###### Rester dans un environnement unscheduled
+Avec CBA il est possible de rester complètement dans un environnement unscheduled et de tout de même avoir de la suspension, c'est plus compliqué que de le faire dans du scheduled mais ça garantie une execution à 100% du code.
+A n'utiliser que pour les fonctions d'importance critique.
+  a) Remplacer le sleep par  <a href="hhttps://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitAndExecute-sqf.html">CBA_fnc_waitAndExecute</a>
+  > Permet un sleep EXACT peut importe les ralentissements et les chutes de framerate et qui s'executera obligatoirement. ``` [
+    {
+        code
+    }, 
+    [params], 
+    delay
+] call CBA_fnc_waitAndExecute;```
+  b) Remplacer le waitUntil par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html"> de leur liste de fonctions ici</a>
+  c) DANS CERTAINS CAS remplacer les while{}do{} par  <a href="https://github.com/MisterHLunaticwraith/MRHMilsimTools/blob/master/Addons/MRHMilsimTools/Functions/CoreFunctions/fn_MilsimTools_Core_conditionalPFEH.sqf">MRH_fnc_MilsimTools_Core_conditionalPFEH</a>
 
 ## Fonctions utiles :
 call TGV_fnc_introCredits
