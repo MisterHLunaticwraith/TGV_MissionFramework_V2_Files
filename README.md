@@ -279,7 +279,7 @@ _handle = [
  <a href="https://mrhmilsimtools-arma3-mod.fandom.com/wiki/List_of_listenable_event_handlers">Milsim Tools</a> vous permettra de diversifier vos missions scriptées. Mais ils offrent de plus une telle optimisation de l'execution distante en multijoueur que des mods comme ACE n'utilisent que celà en lieu et place du RemoteExec, c'est (nettement) mieux optimisé, à peine plus difficile à mettre en place et parfois la seule solution qui fonctionne pour des commandes d'arma qui sont bugguées (c'est par exemple le SEUL moyen de faire un remote exec sur les commandes de la catégorie *moveIn* d'Arma, aucune des méthodes natives d'arma ne fonctionne correctement en multi avec cette commande).
  
  ###### Voici la mise en place:
-  a) Créer un événement dans un des 3 inits: en général le *init.sqf*, si vous êtes certains que le code ne sera jamais utilisé par le serveur vous pouvez le mettre dans le *initPlayerLocal.sqf*, si au contraire vous êtes certains que le code ne doit absolument être executée sur le serveur vous pouvez le mettre dans le *initServer.sqf* (ça n'a pas une importance phénoménale pour ce dernier on pourra reciblex l'éxecution après). Un event se déclare de la manière suivante:
+  a) Créer un événement dans un des 3 inits: en général le *init.sqf*, si vous êtes certains que le code ne sera jamais utilisé par le serveur vous pouvez le mettre dans le *initPlayerLocal.sqf*, si au contraire vous êtes certains que le code ne doit absolument être executé que sur le serveur vous pouvez le mettre dans le *initServer.sqf* (ça n'a pas une importance phénoménale pour ce dernier on pourra recibler l'éxecution après). Un event se déclare de la manière suivante:
   ```
 	["tag_nom_de_mon_event",{code de mon event, peut recevoir des paramètres}] call CBA_fnc_addEventHandler;
   ```
@@ -316,6 +316,7 @@ _handle = [
   ```
   
   c) Plus tard dans un script je veux:
+  
     - dire bonjour au serveur: (il s'en fout mais bon c'est pour l'exemple)
   
   ```
@@ -337,6 +338,7 @@ _handle = [
   effet: seul le joueur qui occupe le perso avec nom de variable anto verra le hint
 
 	-Dire bonjour à seulement Anto, blackhawk et Kmi, en admettant que chacun occupe une unité jouable avec un nom de variable du même nom
+	
   ```
   private _coolGuys = [anto,kmi,blackhawk];
   {
