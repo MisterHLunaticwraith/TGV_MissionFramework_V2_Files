@@ -350,10 +350,47 @@ _handle = [
   effet : seul eux verront le hint
   
 ## Fonctions utiles :
-call TGV_fnc_introCredits
-call TGV_fnc_getFactions
-call TGV_fnc_stopSafeStart
-call TGV_fnc_startSafeStart
-call TGV_fnc_EndCredits;
-call TGV_fnc_startGenericEndCutscene;
-[]spawn TGV_fnc_aliasCutScene
+
+* call TGV_fnc_introCredits
+
+Joue un générique
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/introCredits_1.jpg" width="480">
+</p> 
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/introCredits_2.jpg" width="480">
+</p> 
+
+* call TGV_fnc_getFactions
+
+* call TGV_fnc_stopSafeStart
+
+* call TGV_fnc_startSafeStart
+
+* call TGV_fnc_EndCredits;
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/endCredits_1.jpg" width="480">
+</p> 
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/endCredits_2.jpg" width="480">
+</p> 
+
+* call TGV_fnc_startGenericEndCutscene;
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/genCutScene_1.jpg" width="480">
+</p> 
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/genCutScene_2.jpg" width="480">
+</p> 
+
+<p align="center">
+    <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/genCutScene_3.jpg" width="480">
+</p> 
+
+* []spawn TGV_fnc_aliasCutScene
