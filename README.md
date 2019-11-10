@@ -353,7 +353,21 @@ _handle = [
 
 * call TGV_fnc_introCredits
 
-Joue un générique
+Affiche un générique de mission, récupère des infos dans le framework (non de la mission, nom et logo(s) de(s) (l')auteur(s)
+Peut être appelée sans paramètres.
+
+```
+Paramètres optionnels
+0 - <NUMBER> temps d'affichage de chaque crédit (défaut 4)
+1 -<STRING> Police d'écriture (défaut "PuristaLight")
+2 - <NUMBER> Ombrage de la police (0 = pas d'ombre, 1= ombre, 2 = liserai interne) défaut =0
+3 - <NUMBER> Taille de la police du texte du haut (en orange par défaut) défaut =0.8
+4 - <STRING> Couleur en Hex du texte du haut (défaut= "#f6772a" (orange))
+5 - <NUMBER> Taille de la police du texte du bas(blanc par défaut) (défaut = 1.3)
+6 - <STRING> COuleur Hex du texte du bas (défaut =  "#ffffff" (blanc))
+```
+
+Visuels:
 
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/introCredits_1.jpg" width="480">
@@ -365,11 +379,40 @@ Joue un générique
 
 * call TGV_fnc_getFactions
 
+Retourne les noms de fichiers à donner aux briefings séparés par faction si applicable (voir plus haut)
+
+```
+ //Copie dans le presse papier un texte du genre:
+ BR_BLU_F.sqf BR_BLU_CTRG_F.sqf BR_BLU_G_F.sqf BR_BLU_GEN_F.sqf
+```
+
 * call TGV_fnc_stopSafeStart
+
+Met fin au safe start, pas de paramètres, executé localement, a des effets locaux. SI mis dans une Trigger filtrer pour que ça ne s'execute pas partout plusieurs fois (ce qui ne pose pas problème par ailleur mais bon opti opti..) 
+
+```
+	//dans une trigger ou un code executé globalement
+	if (isServer)then {call TGV_fnc_stopSafeStart};
+```
 
 * call TGV_fnc_startSafeStart
 
+Lance le Safe Start, peut être appelé n'importe où mais ne doit s'executer que sur une seule machine, donc si appelé à plusieurs endroits filtrer
+
+```
+	//dans une trigger ou un code executé globalement
+	if (isServer)then {call TGV_fnc_TGV_fnc_startSafeStart};
+```
+
+
 * call TGV_fnc_EndCredits;
+
+Affiche un générique de fin, récupère les infos du framework et des joueurs (nom de mission, auteurs, logos des auteurs, version de la mission, date de la mission, version du framework, équipes participantes avec leurs logos etc.). Peut être appelé sans paramètres
+
+```
+	//Paramètre optionnel
+	0-<NUMBER> vitesse de défilement (défaut 20) plus la valeur est petite plus le texte défile vite et inversement
+```
 
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/endCredits_1.jpg" width="480">
@@ -380,6 +423,23 @@ Joue un générique
 </p> 
 
 * call TGV_fnc_startGenericEndCutscene;
+
+Joue une cutscene générique, la cutscene passe automatiquement de joueur en joueur, et leur fait jouer une animation, le logo de la team du joueur ainsi que son nom sont visibles sur ça tête, 5 secondes par joueur présent, le générique de fin défile en même temps, la vitesse s'adapte au nombre de joueurs. Puis MET FIN A LA MISSION AVEC UNE FIN GENERIQUE
+
+***/!\ Ne doit surtout pas être remote executé, ne doit être appelé que sur une machine, si appelé depuis trigger filtrer impérativement***
+
+```
+	//dans une trigger ou un code executé globalement
+	if (isServer)then {call TGV_fnc_startGenericEndCutscene};
+```
+
+Peut être appelée sans paramètres.
+Paramètres Optionnels:
+
+```
+	0 - <STRING> Fin définie dans le cfgDebriefing , défaut : "TGV_fin_victoire"
+	1 - <STRING> Musique MAIS définie dans le cfgSounds (et pas cfgMusic), défaut "TGV_FF7_victory" (la musique quand on gagnait un combat dans Final Fantasy VII)
+```
 
 <p align="center">
     <img src="https://github.com/MisterHLunaticwraith/TGV_MissionFramework_V2_Files/blob/master/genCutScene_1.jpg" width="480">
