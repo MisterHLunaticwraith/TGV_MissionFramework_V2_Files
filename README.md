@@ -305,7 +305,7 @@ _handle = [
   ```
   // TGV_mission_fnc_direBonjour
   params ["_quiDitBonjour"];
-  hint format ["%1 te dit bonjour!"];
+  hint format ["%1 te dit bonjour!",_quiDitBonjour];
   ```
   
   b) Je vais créer mon event dans le *init.sqf*
@@ -317,27 +317,28 @@ _handle = [
   
   c) Plus tard dans un script je veux:
   
-    - dire bonjour au serveur: (il s'en fout mais bon c'est pour l'exemple)
+*Dire bonjour au serveur: (il s'en fout mais bon c'est pour l'exemple)*
   
   ```
 	["TGV_dire_bonjour_event",name player] call CBA_fnc_serverEvent;
   ```
   effet: rien sur un dédié (mais le code y est executé, c'est juste que hint sur un dédié ne veut rien dire vu qu'il n'a pas d'interface), en hosted le host verra un hint "Mr H. te dit bonjour!"
   
-	-Dire bonjour à tout le monde 
+*Dire bonjour à tout le monde*
+ 
   ```
 	["TGV_dire_bonjour_event",name player] call CBA_fnc_globalEvent;
   ```
   effet : tout le monde verra le hint
   
-	-Dire bonjour à Anto (admettons que j'ai une unité jouable dont le nom de variable est anto)
+*Dire bonjour à Anto (admettons que j'ai une unité jouable dont le nom de variable est anto)*
 	
   ```
 	["TGV_dire_bonjour_event",name player,anto] call CBA_fnc_targetEvent;
   ```
   effet: seul le joueur qui occupe le perso avec nom de variable anto verra le hint
 
-	-Dire bonjour à seulement Anto, blackhawk et Kmi, en admettant que chacun occupe une unité jouable avec un nom de variable du même nom
+*Dire bonjour à seulement Anto, blackhawk et Kmi, en admettant que chacun occupe une unité jouable avec un nom de variable du même nom*
 	
   ```
   private _coolGuys = [anto,kmi,blackhawk];
