@@ -226,14 +226,18 @@ Quelques règles :
 1. ###### Rester dans un environnement unscheduled
 Avec CBA il est possible de rester complètement dans un environnement unscheduled et de tout de même avoir de la suspension, c'est plus compliqué que de le faire dans du scheduled mais ça garantie une execution à 100% du code.
 A n'utiliser que pour les fonctions d'importance critique.
+
   a) Remplacer le sleep par  <a href="hhttps://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitAndExecute-sqf.html">CBA_fnc_waitAndExecute</a>
-  > Permet un sleep EXACT peut importe les ralentissements et les chutes de framerate et qui s'executera obligatoirement. ``` [
+  > Permet un sleep EXACT peut importe les ralentissements et les chutes de framerate et qui s'executera obligatoirement.
+
+  ``` [
     {
         code
     }, 
     [params], 
     delay
 ] call CBA_fnc_waitAndExecute;```
+
   b) Remplacer le waitUntil par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html"> de leur liste de fonctions ici</a>
   c) DANS CERTAINS CAS remplacer les while{}do{} par  <a href="https://github.com/MisterHLunaticwraith/MRHMilsimTools/blob/master/Addons/MRHMilsimTools/Functions/CoreFunctions/fn_MilsimTools_Core_conditionalPFEH.sqf">MRH_fnc_MilsimTools_Core_conditionalPFEH</a>
 
