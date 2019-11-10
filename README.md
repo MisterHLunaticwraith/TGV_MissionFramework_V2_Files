@@ -222,12 +222,12 @@ Quelques règles :
 
 * Tout le monde utilise CBA mais peu de gens savent à quoi il sert vraiment. Pour vous la faire courte c'est en soit un framework ultra impressionant par la qualité de son code qui facilite grandement la vie avec Arma. Impossible de vous faire un tour complet de CBA, pour info sachez qu'ils ont <a href="https://github.com/CBATeam/CBA_A3/wiki">un wiki ici</a> et un export complet <a href="http://cbateam.github.io/CBA_A3/docs/files/overview-txt.html"> de leur liste de fonctions ici</a>.
 
-#### Je vais quand même prendre le temps de vous faire le tour de quelques fonctionnalités utiles pour ooptimiser votre code avec CBA
+#### Je vais quand même prendre le temps de vous faire le tour de quelques fonctionnalités utiles pour optimiser votre code avec CBA
 1. ###### Rester dans un environnement unscheduled
 Avec CBA il est possible de rester complètement dans un environnement unscheduled et de tout de même avoir de la suspension, c'est plus compliqué que de le faire dans du scheduled mais ça garantie une execution à 100% du code.
 A n'utiliser que pour les fonctions d'importance critique.
 
-  a) Remplacer le sleep par  <a href="hhttps://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitAndExecute-sqf.html">CBA_fnc_waitAndExecute</a>
+  a) Remplacer le sleep par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitAndExecute-sqf.html">CBA_fnc_waitAndExecute</a>
   > Permet un sleep EXACT peut importe les ralentissements et les chutes de framerate et qui s'executera obligatoirement.
 
 ``` 
@@ -240,7 +240,7 @@ A n'utiliser que pour les fonctions d'importance critique.
 ] call CBA_fnc_waitAndExecute; 
 ```
 
-  b) Remplacer le waitUntil par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html"> de leur liste de fonctions ici</a>
+  b) Remplacer le waitUntil par  <a href="https://cbateam.github.io/CBA_A3/docs/files/common/fnc_waitUntilAndExecute-sqf.html"> CBA_fnc_waitUntilAndExecute</a>
   > Pemet un waitUntil EXACT et qui ne se perdra pas dans le scheduleur, à utiliser absolument si le délais du waitUntil risque d'être long 
   
 ```
@@ -275,7 +275,28 @@ _handle = [
 //will hint player object every 2 seconds until player dies upon which it will hint that it has died
 ```
 2. ###### Gestion de la localité d'execution d'un code avec les événements CBA
-
+> Les <a href="https://github.com/CBATeam/CBA_A3/wiki/Custom-Events-System"> Evénements CBA</a> ont pour fonction première de permettre de créer des Event Handlers customs semblables <a href="https://community.bistudio.com/wiki/Arma_3:_Event_Handlers"> ceux d'arma</a> savoir s'en servir et connaître ceux qui sont déclenchés par <a href="https://ace3mod.com/wiki/framework/events-framework.html">ACE</a> et 
+ <a href="https://mrhmilsimtools-arma3-mod.fandom.com/wiki/List_of_listenable_event_handlers">Milsim Tools</a> vous permettra de diversifier vos missions scriptées. Mais ils offrent de plus une telle optimisation de l'execution distante en multijoueur que des mods comme ACE n'utilisent que celà en lieu et place du RemoteExec, c'est (nettement) mieux optimisé, à peine plus difficile à mettre en place et parfois la seule solution qui fonctionne pour des commandes d'arma qui sont bugguées (c'est par exemple le SEUL moyen de faire un remote exec sur les commandes de la catégorie *moveIn* d'Arma, aucune des méthodes natives d'arma ne fonctionne correctement en multi avec cette commande).
+ Voici la mise en place:
+  a) Créer un événement dans un des 3 inits: en général le *init.sqf*, si vous êtes certains que le code ne sera jamais utilisé par le serveur vous pouvez le mettre dans le *initPlayerLocal.sqf*, si au contraire vous êtes certains que le code ne doit absolument être executée sur le serveur vous pouvez le mettre dans le *initServer.sqf* (ça n'a pas une importance phénoménale pour ce dernier on pourra reciblex l'éxecution après). Un event se déclare de la manière suivante:
+  ```
+	["tag_nom_de_mon_event",{code de mon event, peut recevoir des paramètres}] call CBA_fnc_addEventHandler;
+  ```
+  Cet event ne se déclenche pas tout seul à l'init.
+  
+  b) Je peux maintenant, n'importe où dans un autre script, même executé localement, déclencher cet event sur une machine cible avec ces 3 fonctions
+  *Pour le déclencher globalement (remplace le remote exec):*
+  ```
+	["tag_nom_de_mon_event",[parametres à passer]] call CBA_fnc_globalEvent
+  ```
+  *Pour le déclencher seulement sur le serveur:*
+  ```
+	["tag_nom_de_mon_event",[parametres à passer]] call CBA_fnc_serverEvent
+  ```
+  *Pour le déclencher seulement sur une machine ou l'objet est local:*
+  ```
+	["tag_nom_de_mon_event",[parametres à passer],objetAJoindre] call CBA_fnc_serverEvent
+  ```
 ## Fonctions utiles :
 call TGV_fnc_introCredits
 call TGV_fnc_getFactions
