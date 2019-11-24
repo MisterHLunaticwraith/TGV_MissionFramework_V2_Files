@@ -393,6 +393,24 @@ force cba_disposable_dropUsedLauncher = 2;
 force cba_disposable_replaceDisposableLauncher = true;
 
 
+// ADV - ACE CPR
+force adv_aceCPR_addTime = 20;
+force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
+force adv_aceCPR_chance_0 = 5;
+force adv_aceCPR_chance_1 = 15;
+force adv_aceCPR_chance_2 = 40;
+force adv_aceCPR_chance_aed = 85;
+force adv_aceCPR_enable = true;
+force adv_aceCPR_maxTime = 1200;
+force adv_aceCPR_useLocation_AED = 0;
+
+// ADV - ACE Splint
+force adv_aceSplint_enable = true;
+force adv_aceSplint_reopenChance_medic = 0;
+force adv_aceSplint_patientCondition = 0;
+force adv_aceSplint_reopenChance_regular = 30;
+force adv_aceSplint_reopenTime = 600;
+force adv_aceSplint_reuseChance = 80;
 
 // MRH_MilsimTools - Core settings
 

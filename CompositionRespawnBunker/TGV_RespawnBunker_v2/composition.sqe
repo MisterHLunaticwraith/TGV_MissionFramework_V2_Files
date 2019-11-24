@@ -1,5 +1,5 @@
 version=53;
-center[]={4504.6875,5,369.93924};
+center[]={2207.4248,13.45,13282.53};
 class items
 {
 	items=21;
@@ -8,18 +8,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-1.652832,0.66282272,3.6121216};
-			angles[]={-0,6.2502103,0};
+			position[]={1.4003906,1.9471321,-0.29785156};
 		};
 		side="Empty";
-		flags=4;
+		flags=5;
 		class Attributes
 		{
-			createAsSimpleObject=1;
+			init="call{this setVariable [""BIS_disabled_Door_1"",1,true];" \n "this setVariable [""BIS_disabled_Door_2"",1,true];}";
 			disableSimulation=1;
 		};
-		id=45;
-		type="Land_CampingTable_F";
+		id=476;
+		type="Land_Barracks_02_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -81,6 +80,224 @@ class items
 			};
 			class Attribute3
 			{
+				property="Enh_HoldAction";
+				expression="			_value params ['_name','_iconIdle','_iconProgress','_conditionShow','_conditionProgress','_codeStart','_codeProgress','_codeCompletion','_codeInterrupt','_duration','_priority','_showUnconscious','_showWindow'];			if (!is3DEN && !(_name isEqualTo '')) then			{				[					_this,					_name,					_iconIdle,					_iconProgress,					_conditionShow,					_conditionProgress,					compile _codeStart,					compile _codeProgress,					compile format ['%1 %2','[_this select 0,_this select 2] remoteExecCall [''removeAction'',0]; remoteExecCall ['''',_this select 0];',_codeCompletion],					compile _codeInterrupt,					nil,					_duration,					_priority,					true,					_showUnconscious,					_showWindow				] remoteExecCall ['BIS_fnc_holdActionAdd',0,_this];			};";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"ARRAY"
+							};
+						};
+						class value
+						{
+							items=14;
+							class Item0
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="\a3\ui_f\data\igui\cfg\holdactions\holdaction_revive_ca.paa";
+								};
+							};
+							class Item3
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+							class Item4
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+							class Item5
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item6
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item7
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item8
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+							class Item9
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=10;
+								};
+							};
+							class Item10
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1000;
+								};
+							};
+							class Item11
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+							class Item12
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+							class Item13
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute4
+			{
 				property="mrh_search_CodeFound";
 				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
 				class Value
@@ -98,7 +315,71 @@ class items
 					};
 				};
 			};
-			class Attribute4
+			class Attribute5
+			{
+				property="DoorStates";
+				expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"ARRAY"
+							};
+						};
+						class value
+						{
+							items=3;
+							class Item0
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute6
 			{
 				property="mrh_search_nameFound";
 				expression="_this setVariable ['MRH_object_Found',_value,true]";
@@ -117,7 +398,7 @@ class items
 					};
 				};
 			};
-			class Attribute5
+			class Attribute7
 			{
 				property="mrh_hackAndCollectDataHackFileSize";
 				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
@@ -136,7 +417,7 @@ class items
 					};
 				};
 			};
-			class Attribute6
+			class Attribute8
 			{
 				property="mrh_hackAndCollectDataHackData";
 				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
@@ -155,7 +436,7 @@ class items
 					};
 				};
 			};
-			nAttributes=7;
+			nAttributes=9;
 		};
 	};
 	class Item1
@@ -163,7 +444,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.70263672,0.66282272,3.6375732};
+			position[]={-1.6533203,0.66282368,3.6103516};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -173,7 +454,7 @@ class items
 			createAsSimpleObject=1;
 			disableSimulation=1;
 		};
-		id=46;
+		id=478;
 		type="Land_CampingTable_F";
 		class CustomAttributes
 		{
@@ -318,7 +599,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={3.2265625,0.66282272,3.6469421};
+			position[]={0.70214844,0.66282368,3.6357422};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -328,7 +609,7 @@ class items
 			createAsSimpleObject=1;
 			disableSimulation=1;
 		};
-		id=47;
+		id=479;
 		type="Land_CampingTable_F";
 		class CustomAttributes
 		{
@@ -473,8 +754,8 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={2.9824219,0.66282272,-3.8467102};
-			angles[]={-0,3.1034749,0};
+			position[]={3.2260742,0.66282368,3.6455078};
+			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
 		flags=4;
@@ -483,7 +764,7 @@ class items
 			createAsSimpleObject=1;
 			disableSimulation=1;
 		};
-		id=48;
+		id=480;
 		type="Land_CampingTable_F";
 		class CustomAttributes
 		{
@@ -628,7 +909,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.62695313,0.66282272,-3.8842773};
+			position[]={2.9819336,0.66282368,-3.8486328};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -638,7 +919,7 @@ class items
 			createAsSimpleObject=1;
 			disableSimulation=1;
 		};
-		id=49;
+		id=481;
 		type="Land_CampingTable_F";
 		class CustomAttributes
 		{
@@ -783,7 +1064,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-1.8969727,0.66282272,-3.9066162};
+			position[]={0.62646484,0.66282368,-3.8857422};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -793,7 +1074,7 @@ class items
 			createAsSimpleObject=1;
 			disableSimulation=1;
 		};
-		id=50;
+		id=482;
 		type="Land_CampingTable_F";
 		class CustomAttributes
 		{
@@ -938,49 +1219,18 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-7.5166016,1.335084,2.5780334};
-			angles[]={0,5.3975701,0};
-		};
-		side="Empty";
-		flags=5;
-		class Attributes
-		{
-		};
-		id=51;
-		type="Land_PortableLight_double_F";
-	};
-	class Item7
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-5.8520508,0.60639143,-0.059387207};
-			angles[]={0,3.1258881,0};
-		};
-		side="Empty";
-		flags=5;
-		class Attributes
-		{
-		};
-		id=52;
-		type="TGV_respawn_base";
-	};
-	class Item8
-	{
-		dataType="Object";
-		class PositionInfo
-		{
-			position[]={-2.1435547,1.2342815,3.526886};
-			angles[]={-0,6.2502103,0};
+			position[]={-1.8974609,0.66282368,-3.9082031};
+			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="call{[this] call TGV_fnc_isSpectatorComputer}";
+			createAsSimpleObject=1;
+			disableSimulation=1;
 		};
-		id=55;
-		type="Land_Laptop_03_black_F";
+		id=483;
+		type="Land_CampingTable_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -1042,25 +1292,6 @@ class items
 			};
 			class Attribute3
 			{
-				property="ObjectTextureCustom1";
-				expression="_this setObjectTextureGlobal [1,_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
-					};
-				};
-			};
-			class Attribute4
-			{
 				property="mrh_search_CodeFound";
 				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
 				class Value
@@ -1078,7 +1309,7 @@ class items
 					};
 				};
 			};
-			class Attribute5
+			class Attribute4
 			{
 				property="mrh_search_nameFound";
 				expression="_this setVariable ['MRH_object_Found',_value,true]";
@@ -1097,7 +1328,7 @@ class items
 					};
 				};
 			};
-			class Attribute6
+			class Attribute5
 			{
 				property="mrh_hackAndCollectDataHackFileSize";
 				expression="_this setVariable ['MRH_objectHackFileSize',_value,true]";
@@ -1116,7 +1347,7 @@ class items
 					};
 				};
 			};
-			class Attribute7
+			class Attribute6
 			{
 				property="mrh_hackAndCollectDataHackData";
 				expression="_this setVariable ['MRH_objectHackDataReceived',_value,true]";
@@ -1135,15 +1366,47 @@ class items
 					};
 				};
 			};
-			nAttributes=8;
+			nAttributes=7;
 		};
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-7.5170898,1.3350849,2.5761719};
+			angles[]={0,5.3975701,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=484;
+		type="Land_PortableLight_double_F";
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-5.8525391,0.60639191,-0.060546875};
+			angles[]={0,3.1258881,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=485;
+		type="TGV_respawn_base";
 	};
 	class Item9
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-1.2260742,1.2342815,3.5514832};
+			position[]={-2.144043,1.2342815,3.5253906};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -1152,7 +1415,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=56;
+		id=488;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -1316,7 +1579,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.19726563,1.2342815,3.6510925};
+			position[]={-1.2265625,1.2342815,3.5498047};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -1325,7 +1588,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=57;
+		id=489;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -1489,7 +1752,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.1147461,1.2342815,3.6756897};
+			position[]={0.19677734,1.2342815,3.6494141};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -1498,7 +1761,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=58;
+		id=490;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -1662,7 +1925,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={2.7358398,1.2342815,3.5617065};
+			position[]={1.1142578,1.2342815,3.6738281};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -1671,7 +1934,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=59;
+		id=491;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -1835,7 +2098,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={3.6533203,1.2342815,3.5863037};
+			position[]={2.7353516,1.2342815,3.5605469};
 			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
@@ -1844,7 +2107,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=60;
+		id=492;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -2008,8 +2271,8 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={3.4726563,1.2342815,-3.7589417};
-			angles[]={-0,3.1034749,0};
+			position[]={3.652832,1.2342815,3.5849609};
+			angles[]={-0,6.2502103,0};
 		};
 		side="Empty";
 		flags=4;
@@ -2017,7 +2280,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=61;
+		id=493;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -2181,7 +2444,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={2.5551758,1.2342815,-3.788269};
+			position[]={3.472168,1.2342815,-3.7607422};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -2190,7 +2453,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=62;
+		id=494;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -2354,7 +2617,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.1323242,1.2342815,-3.8952026};
+			position[]={2.5546875,1.2342815,-3.7900391};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -2363,7 +2626,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=63;
+		id=495;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -2527,7 +2790,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.21533203,1.2342815,-3.9244995};
+			position[]={1.1318359,1.2342815,-3.8964844};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -2536,7 +2799,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=64;
+		id=496;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -2700,7 +2963,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-1.40625,1.2342815,-3.8188782};
+			position[]={0.21484375,1.2342815,-3.9257813};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -2709,7 +2972,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=65;
+		id=497;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -2873,7 +3136,7 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.3237305,1.2342815,-3.848175};
+			position[]={-1.4067383,1.2342815,-3.8203125};
 			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
@@ -2882,7 +3145,7 @@ class items
 		{
 			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=66;
+		id=498;
 		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
@@ -3046,16 +3309,17 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.4008789,1.9471321,-0.29660034};
+			position[]={-2.3242188,1.2342815,-3.8496094};
+			angles[]={-0,3.1034749,0};
 		};
 		side="Empty";
-		flags=5;
+		flags=4;
 		class Attributes
 		{
-			disableSimulation=1;
+			init="call{[this] call TGV_fnc_isSpectatorComputer}";
 		};
-		id=44;
-		type="Land_Barracks_02_F";
+		id=499;
+		type="Land_Laptop_03_black_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -3117,6 +3381,25 @@ class items
 			};
 			class Attribute3
 			{
+				property="ObjectTextureCustom1";
+				expression="_this setObjectTextureGlobal [1,_value]";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="\TGV_Assets\paa\tgvcomputerscreen_co.paa";
+					};
+				};
+			};
+			class Attribute4
+			{
 				property="mrh_search_CodeFound";
 				expression="_this setVariable ['MRH_object_Found_code',_value,true]";
 				class Value
@@ -3131,70 +3414,6 @@ class items
 							};
 						};
 						value="true";
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="DoorStates";
-				expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"ARRAY"
-							};
-						};
-						class value
-						{
-							items=3;
-							class Item0
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=5;
-								};
-							};
-							class Item1
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-							class Item2
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
 					};
 				};
 			};

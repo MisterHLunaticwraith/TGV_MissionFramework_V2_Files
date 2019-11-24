@@ -21,3 +21,16 @@ else
 	#include "briefingSMEPP.sqf"
 };
 //----Fin de la non édition
+
+//[player,""] call MRH_fnc_forceFaceWear; //décommenter et mettre une classe de facewear pour forcer l'usage d'un facewear particulier ex: "rhs_ess_black"
+
+//["media\img\splashscreen.paa", 15] call MRH_fnc_SplashScreen; // pour avoir une image plein écran en début de mission
+
+/*
+//----------Décommenter et editer ce bloc pour ajouter des données à la tablette du joueur dès le début de la mission
+private ["_data","_pics"];
+_data = []; //nom de classe des données, séparés par des , si plusieurs ex ["maDonne1"] ou ["maDonne1","maDonne2"]
+_pics = []; //nom de classe des images, séparés par des , si plusieurs ex ["maPic1"] ou ["maPic1","maPic2"]
+	[player,_data]call MRH_fnc_MilsimTools_SoldierTab_attributeData;
+	[player,_pics]call MRH_fnc_MilsimTools_SoldierTab_attributePictures;
+*/

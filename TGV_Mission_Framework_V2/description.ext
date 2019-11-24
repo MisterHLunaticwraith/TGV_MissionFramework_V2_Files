@@ -9,8 +9,8 @@ class cfgTGVmissions
 	//Ne pas changer
 	class FrameWorkVersion
 	{
-		versionStr = "2.0.0";
-		versionAr[] = {2,0,0};
+		versionStr = "2.0.1";
+		versionAr[] = {2,0,1};
 	};
 	// fin ne pas changer
 	class missionInfo
